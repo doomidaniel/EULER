@@ -4,7 +4,7 @@
 
 int prime(n)
 {
-    int primes[n+5];
+    int primes[n+1];
     int i=1,j,N;
     primes[0] = 1;
     primes[1] = 2;
