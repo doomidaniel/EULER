@@ -12,11 +12,11 @@ int prime(n)
        {
            for(N=primes[i]+1;;N++)
            {
-               for(j=i;j>0;j--)
+               for(j=1;j<=i;j++)
                {
                    if (N%primes[j]==0) break;
                }
-               if (j==0) 
+               if (j-1==i) 
                {primes[++i] = N;
                 break;
                }
