@@ -13,7 +13,7 @@ int main(void)
 {
  int prod=1, MaxProd = 1, i,j;   
  
- for(i=0;i<1000;i++)
+ for(i=0;i<995;i++)
  {                
    for(j=i;j<i+5;j++)                
    {
