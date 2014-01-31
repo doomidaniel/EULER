@@ -18,26 +18,23 @@ int IsThreeDigitProd(int n)
 
 int IsPalindrome(int n)
 {
-  int i,r,v[50];
-  r=n;
-  for(i=0;r;i++)
+  int R=0,N,r;
+  N=n;
+  while(N)
   {
-     v[i] = r%10;
-     r/=10;
+     r = N%10;
+     R = R*10 + r;
+     N/=10;
   }
-  while(i)
-  {
-    r+=v[i]*pow(10,i);
-    --i;
-  }
-  if (n==r) return 1;
+  
+  if (n==R) return 1;
   return 0;    
 }
 
 int main(void)
 {
  int n = 999*999;
- while(n>0)
+ while(n>10000)
  {
   if (IsThreeDigitProd(n))
      {
@@ -46,7 +43,7 @@ int main(void)
          break;
        }
      }
-             
+     --n;        
  }
 
 
