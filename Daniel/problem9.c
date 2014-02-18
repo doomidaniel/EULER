@@ -29,7 +29,7 @@ int main(void)
  
  for(n=1;n<23;n++)
  {
-   for(m=1;m<23;m++)
+   for(m=1;m<n;m++)
    {
       if(n*n + n*m == 500)
       {
