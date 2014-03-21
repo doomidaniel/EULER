@@ -8,6 +8,7 @@ int main()
     for(i=2;i<1000000;i++)
     {
        j = i;
+       count = 0; //reset counter pingu
        //fprintf(pFile,"\n Pentru %lld sirul obtinut este: ",i);
        while(j>1)
        {
